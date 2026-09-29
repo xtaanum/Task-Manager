@@ -30,11 +30,11 @@
     <main class="tasks-section" id="tasks-section">
         <h2 class="section-title">Tasks list</h2>
         <div class="filter-controls" id="filter-controls">
-            <button class="filter-btn active" id="all-filter" type="button">All</button>
-            <button class="filter-btn" id="pending-filter" type="button">pending</button>
-            <button class="filter-btn" id="completed-filter" type="button">completed</button>
+            <button class="filter-btn active" id="all-filter" data-filter="all" type="button" aria-pressed="true">All</button>
+            <button class="filter-btn" id="pending-filter" data-filter="pending" type="button" aria-pressed="false">Pending</button>
+            <button class="filter-btn" id="completed-filter" data-filter="completed" type="button" aria-pressed="false">Completed</button>
         </div>
-        <div class="task-list" id="task-list">
+        <div class="task-list" id="task-list" aria-live="polite">
         </div>
     </main>
 
